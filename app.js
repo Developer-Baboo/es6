@@ -120,3 +120,153 @@
 
         /* array = for of
         object = for of */
+
+        //For in loop
+        /* const datas = {
+            name: "Baboo",
+            roll:21,
+            subject:"math" 
+        }
+        for(let key in datas ){
+            // console.log(datas[key]);
+            console.log({
+                // key: key,
+                key,
+                value: datas[key]
+        });
+        } */
+
+        //Spread Operator
+
+        /* const data = ['Baboo', "kumar", "Heerani"]
+        console.log(data); 
+        console.log(...data); */ //spread operator, get value without syntax
+
+        //Join two array using spread operator
+
+       /*  const data1 = ["Baboo","Kumar"];
+        const data2 = ["@","Karachi"];
+        const result = [...data1,...data2]
+        console.log(result); */
+
+        //objects using spread operator
+        /* const data = {
+            name: "hello",
+            roll: 123
+        }
+        console.log(...data); */ //Spread syntax requires ...iterable[Symbol.iterator] to be a function
+
+        // Join two objects using spread operator
+        /* const data = {
+            name: "Baboo",
+            rol:123
+        }
+        const final = {
+            subject: "chemistry",
+        }
+        const result = {
+           ...final,
+           ...data
+        }
+        console.log(result); */
+
+
+        /* const data = [1,2,3]
+        const result = (x,y,z)=>{
+            console.log(x,y,z);
+        }
+        result(...data) */
+
+
+        //Map Functions
+        /* const names = ['baboo', 'kumar','heerani'];
+        // const result = names.map(()=>"map")
+        // const result = names.map((item, index)=>item.toUpperCase())
+        // const result = names.map((item, index)=>index+1)
+        const result = names.map((item, index)=>item.length)
+        console.log(result); */
+
+
+        /* const datas = [2,5,9,8,6]
+        const result = datas.map((item) =>{
+            if(item%2==0)
+                return item+ " is Even";
+            else
+                return item+" is Odd"; 
+        });
+        console.log(result); */
+
+
+        //Filter vs Map Functions
+
+        //map 
+        // const data = [12,14,56,7];
+        /* const result = data.map((num)=>{
+            if(num > 0)
+            return num
+            else return "smaller";
+        }); */
+
+        //to avoid from above lengthy code we use filter, 7 chota ha lekin uskelay cod enhi likha ha 
+        /* const result = data.filter((num) =>num >10)
+        console.log(result); */
+
+
+       /*  const data = [
+            {
+                name: "Baboo",
+                roll:13
+            },
+            {
+                name: "akash",
+                roll:19,
+
+            },
+        ]
+        const result = data.filter((item) =>item.roll >10)
+        console.log(result); */
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
