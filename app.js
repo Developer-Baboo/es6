@@ -354,9 +354,61 @@
             console.log(key);
         } */
 
-        
+        // Module Import Export Default Vs Export in ES6
+        // ek js ke file ko dosre js file man open krna ko bolta han module;
 
+        /* import {students, teachers, employees} from './data.js';
+        console.log(students, teachers, employees); */
+        
+        //import ka aga name hum apne mrzi sa likh sakhta han
+
+
+        // Fetch API Function HTTP Request in ES6
+        /* 
+        http: request types : 4
+        1. get: // when you want to get data from server
+        2. post//store data on server
+        3. put/patch: update data 
+
+        
+        */
+
+        // const get = ()=>{
+        //     fetch('https://dummyjson.com/products')
+        //     .then((response)=>console.log(response))
+        //     .catch((err)=>console.log(err));
+        // }
       
+        //Object .entries() function in ES6
+        //array ka sath index pa print kraga in loop
+
+        /* const data = [
+            "hi",
+            "Hi",
+            "Hello",
+        ]
+        const itt = data.entries()
+        for(let item of itt){
+            console.log(item);
+        } */
+
+
+        //yield and pause functions
+        //jb chahio function ko ruko and chlio
+        //jahn pr pause krna ha wo yield use krenga
+       
+        /* function* Generator(){
+        yield  1;
+        yield  2;
+       }
+       const gen = Generator()
+       console.log(gen.next().done); // false: abhi value pra han
+         console.log(gen.next());
+        console.log(gen.next().value); //1
+        console.log(gen.next().value); //2
+        console.log(gen.next().done); */ //true: data khtm hogya han, end pa call kya ha value print krdeya
+
+
 
 
 

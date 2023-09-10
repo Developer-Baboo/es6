@@ -4,12 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #result{
+            display: flex;
+            gap:24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #card{
+            width:300px;
+            height:300px;
+            border-radius: 16px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px 0 gray;
+
+        }
+    </style>
 </head>
 <body>
     <!-- <h1>es6</h1> -->
     <!-- <button onclick="demo()">Click me</button> -->
 
-    <input onblur="onBlur()" id="input" />
-    <script src="./app.js"></script>
+    <!-- <input onblur="onBlur()" id="input" /> -->
+
+    <!-- <button onclick="get()" >Get Data</button> -->
+    <!-- <div id="result"></div>
+    <button onclick="get()">Fetch Data</button>
+    <button onclick="post()">Post Data</button>
+    <button onclick="put()">Update Data</button>
+    <button onclick="trash()" >Delete Data</button> -->
+
+    <!-- <button onclick="demo(12)">Test Scope</button> -->
+
+
+     <!-- //For Generator and Yield in es6? -->
+
+     <h1 id="result"></h1>
+
+     <p id="result"></p>
+
+
+    
+    <!-- <script src="./app.js" type="module" defer></script> -->
+
+    <script>
+        /* const result = document.querySelector("#result");
+        const get = () => {
+                fetch('https://dummyjson.com/products')
+
+                    .then((response) => response.json())
+
+                    .then((data)=>{
+                        const products = data.products
+                        for(let product of products){
+                            const ui = `
+                                <div id='card'>
+                                    <h1>${product.brand}</h1>
+                                    <h1>${product.title}</h1>      
+                                </div>
+                            `
+                            result.innerHTML+=ui
+                        }   
+                    })
+                    .catch((err) => console.log(err));
+            }
+        const post = () =>{
+                fetch('https://dummyjson.com/products/add',{
+                    method: 'POST',
+                    data: JSON.stringify({
+                        title: 'ksdfjsldkfjs'
+                    })
+                })
+                .then((response)=>response.json())
+                .then((data) =>console.log(data))
+                .catch((err)=>console.log(err))
+            }
+        const put = () => {
+                fetch('https://dummyjson.com/products/1', {
+                    method: 'PUT',
+                    body: JSON.stringify({
+                        title: 'iPhone Galaxy +1'
+                    })
+                })
+                    .then((response) => response.json())
+                    .then((data) => console.log(data))
+                    .catch((err) => console.log(err))
+            }
+
+
+            const trash = () => {
+                    fetch('https://dummyjson.com/products/1', {
+                        method: 'DELETE',
+                    })
+                        .then((response) => response.json())
+                        .then((data) => console.log(data))
+                        .catch((err) => console.log(err))
+                } */
+
+
+                // //lexical means accessbly in inner functions
+                /* const demo = (num)=>{
+                    //num is lexical scope: upper function ka 
+                    //closures: ese method jis man sa inner function upper lexical scope wala variable ko use kra
+
+                    //
+
+                    const div = ()=>{
+                        alert(num)
+                    }
+                    div()
+                } */
+
+
+
+                //  Generator function* & Yield in ES6
+
+                /* function* Generator(){
+                    yield 'B' ;
+                    yield 'a';
+                    yield 'b';
+                    yield 'o';
+                    yield 'o';
+                    yield ' ';
+                    yield 'K';
+                    yield 'u';
+                    yield 'm';
+                    yield 'a';
+                    yield 'r';
+                    yield ' ';
+                    yield 'H';
+                    yield 'e';
+                    yield 'e';
+                    yield 'r';
+                    yield 'a';
+                    yield 'n';
+                    yield 'i';
+                }
+                const result = document.querySelector("#result");
+                const gen = Generator()
+                let release = setInterval(()=>{
+                    let {value, done} = gen.next()
+                    if(!done) result.innerHTML +=value
+                    else clearInterval(relase)
+                },100) */
+
+
+                //Maps & Sets Data Structure in ES6
+                //Object man data store hota ha lekin uskleya itna operation nhi han
+                //map: store data and proivde many functions to perform operations
+               /*  const student = new Map() //we created student map
+                student.set("name", "Baboo") //set is used to store
+                student.set("roll", 21)
+                student.set("class", 7) */
+                /* console.log(student.get("name")) //getting data 
+                console.log(student.get("roll")) 
+                console.log(student.get("class")) 
+                console.log(student.has("class")) */
+                // console.log(student.delete("class"))
+                /* for(let [key, value] of student){
+                    console.log(key, value);
+                }  
+                
+                store, get, has(check data), delete
+                */  
+
+
+                //Sets
+                /* const students = new Set()
+                students.add("sdjfl")
+                students.add("sdjfl321")
+                students.add("sdjfl123")
+                // console.log(students);
+                console.log(students.has("rahool"));
+                for(let x of students){
+                    console.log(x);
+                }
+ */
+                // it is not like array we get data using index //set not accept duplicate data
+    
+    
+                /* document.querySelector("#result").innerHTML = `
+                Date is ${new Date().toDateString()}
+                ` */
+                const getDate = () =>{
+                    return new Date().toDateString()
+                }
+                document.querySelector("#result").innerHTML = `
+                Date is ${getDate()}`;
+
+    </script>
 </body>
 </html>
